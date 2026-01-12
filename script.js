@@ -296,10 +296,10 @@ $('#heartBtn').addEventListener('click', () => {
     if (!layer) return;
 
     const images = [
-        'assets/heart.png',
-        'assets/heart12.png',
-        'assets/bubble.png',
-        'assets/bubble1.jpg'
+        'heart.png',
+        'heart12.png',
+        'bubble.png',
+        'bubble1.jpg'
     ];
 
     const rand = (min, max) => Math.random() * (max - min) + min;
