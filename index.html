@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thiệp Mời Chụp Kỉ Yếu - 12E</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<div id="falling-layer" aria-hidden="true"></div>
+
+<!-- background particles -->
+<canvas id="fx"></canvas>
+
+
+<!-- music -->
+<audio id="bgm" loop>
+  <!-- đặt file nhạc vào assets/bgm.mp3 -->
+  <source src="assets/1.mp3" type="audio/mpeg" />
+</audio>
+
+<button class="music-btn" id="musicBtn" aria-label="Bật tắt nhạc">
+  ♪
+</button>
+
+<main class="page">
+  <!-- HERO -->
+  <section class="section hero" id="top">
+    <div class="card">
+      <div class="gold-corner tr"></div>
+      <div class="gold-corner bl"></div>
+
+      <p class="kicker">Join Us To Celebrate!</p>
+      <h1 class="title"> Kỷ Yếu Của VỊT</h1>
+      <p class="sub">THPT Nam Sách Nam Sách Hải Phòng</p>
+
+      <div class="date-row">
+        <div class="mini">
+          <div class="mini-top">SUNDAY</div>
+          <div class="mini-main">18</div>
+          <div class="mini-bot">JAN 2026</div>
+        </div>
+        <div class="mini">
+          <div class="mini-top">TIME</div>
+          <div class="mini-main">10:00</div>
+          <div class="mini-bot">– 11:30</div>
+        </div>
+      </div>
+
+      <p class="poem">
+        “Thanh xuân là một lần duy nhất,<br/>
+        mình cùng lưu lại khoảnh khắc đẹp nhất.”
+      </p>
+
+      <div class="cta">
+        <a class="btn" href="#rsvp">Xác nhận tham gia</a>
+        <a class="btn ghost" href="#countdown">Xem đếm ngược</a>
+      </div>
+
+      <div class="scroll-hint">↓ Cuộn xuống</div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="section" id="story">
+    <div class="glass">
+      <h2 class="h2"> ❤️Love story by VỊT❤️  </h2>
+      <p class="text center">
+        Sự hiện diện của mọi người chính là mảnh ghép cuối cùng để ngày kỷ yếu của tớ trở nên trọn vẹn. Tớ không mong gì hơn là được lưu giữ những khoảnh khắc đẹp nhất bên những người mình yêu quý trước khi bước sang một hành trình mới. Mọi người chỉ cần bớt chút thời gian ghé qua chung vui là tui đã cảm động lắm rồi. Rất hy vọng được đón tiếp và chụp hình cùng tất cả mọi người vào ngày hôm đó. Trân trọng và hẹn gặp các homie nhé!!…<br/><br/>
+        Hẹn gặp bạn trong buổi chụp kỉ yếu để mình cùng cười thật to nhé!
+      </p>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="section" id="countdown">
+    <div class="glass">
+      <h2 class="h2">Đếm ngược tới ngày chụp</h2>
+      <div class="count">
+        <div class="box"><div class="num" id="d">0</div><div class="lbl">ngày</div></div>
+        <div class="box"><div class="num" id="h">0</div><div class="lbl">giờ</div></div>
+        <div class="box"><div class="num" id="m">0</div><div class="lbl">phút</div></div>
+        <div class="box"><div class="num" id="s">0</div><div class="lbl">giây</div></div>
+      </div>
+      <p class="text center small" id="fullDate"></p>
+    </div>
+  </section>
+  <section class="section" id="memory">
+    <div class="glass story">
+      <p class="quote">
+        “Mong những lời chúc phúc của bạn ngày chia tay là chiếc ô che nắng,
+        che mưa cho tôi vượt mọi chông gai đời người.”
+      </p>
+
+      <h2 class="story-title">VỊT CUTE</h2>
+      <div class="story-name">Nguyễn Hoàng Minh Anh</div>
+
+      <div class="story-grid">
+        <figure class="story-photo">
+          <!-- đổi ảnh ở đây -->
+          <img src="assets/2.png" alt="Ảnh kỉ yếu" />
+        </figure>
+
+        <div class="story-text">
+          <p>
+            Tốt nghiệp là dấu mốc kết thúc một hành trình và mở ra một chặng đường mới.
+            Tôi biết phía trước sẽ không dễ dàng, nhưng tôi tin vào bản thân,
+            vào những gì mình đã học được.
+          </p>
+          <p>
+            Cảm ơn thanh xuân vì đã rực rỡ đến thế! 🎓💗
+          </p>
+
+          <div class="story-divider"></div>
+
+          <div class="invite">
+            <div class="invite-script">Thân mời</div>
+            <div class="invite-caps">CÔ, CHÚ, ANH, CHỊ ĐẾN DỰ BUỔI CHỤP KỈ YẾU</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="gallery">
+    <div class="glass gallery">
+      <h2 class="h2"> Khoảnh khắc của VỊT</h2>
+
+      <div class="grid-3">
+        <figure class="thumb">
+          <img src="assets/1.jpg" alt="Khoảnh khắc 1">
+        </figure>
+        <figure class="thumb">
+          <img src="assets/3.jpg" alt="Khoảnh khắc 2">
+        </figure>
+        <figure class="thumb">
+          <img src="assets/4.jpg" alt="Khoảnh khắc 3">
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CALENDAR -->
+  <section class="section" id="calendar">
+    <div class="glass">
+      <h2 class="h2">Lịch tháng</h2>
+      <div class="cal-head">
+        <div class="cal-title" id="calTitle"></div>
+        <div class="cal-note">Ngày chụp được đánh dấu ❤️</div>
+      </div>
+      <div class="calendar" id="cal"></div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="section" id="rsvp">
+    <div class="glass">
+      <h2 class="h2">Rất mong nhận được hồi âm từ bạn</h2>
+
+      <form class="form" id="rsvpForm">
+        <label class="field">
+          <span>Họ và tên</span>
+          <input id="name" required placeholder="Ví dụ: Vịt Cute" />
+        </label>
+
+        <label class="field">
+          <span>Lớp</span>
+          <input id="className" required placeholder="Ví dụ: 12E" />
+        </label>
+
+        <label class="field">
+          <span>Bạn sẽ tham gia chứ?</span>
+          <select id="status" required>
+            <option value="yes">Có, mình sẽ tham gia</option>
+            <option value="no">Mình bận, rất tiếc không thể tham gia</option>
+          </select>
+        </label>
+
+        <label class="field">
+          <span>Ghi chú (tuỳ chọn)</span>
+          <textarea id="note" rows="3" placeholder="Ví dụ: mình đến trễ 15 phút..."></textarea>
+        </label>
+
+        <button class="btn full" type="submit">Gửi xác nhận</button>
+        <button class="btn ghost full" id="reset" type="button">Xoá dữ liệu</button>
+      </form>
+
+      <div class="toast" id="toast" aria-live="polite"></div>
+
+      <div class="shoot">
+        <button class="heart-btn" id="heartBtn">💗 Bắn tim</button>
+        <div class="heart-count">Tổng tim: <b id="heartCount">0</b></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    Made with 💗 for you • <a href="#top">lên đầu trang</a>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
